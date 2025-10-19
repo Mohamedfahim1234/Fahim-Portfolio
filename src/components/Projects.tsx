@@ -72,11 +72,6 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                
-                <button className="flex items-center gap-2 text-primary hover:text-secondary transition-colors group/btn font-display">
-                  <span className="font-semibold">Explore Project</span>
-                  <ExternalLink className="h-5 w-5 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-                </button>
               </div>
             </Card>
           ))}
@@ -84,7 +79,7 @@ const Projects = () => {
 
         <div className="text-center mt-16">
           <a 
-            href="https://github.com/yourusername" 
+            href="https://github.com/Mohamedfahim1234" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-4 glass-neon rounded-full border-neon hover-lift-neon group"

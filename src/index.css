@@ -70,6 +70,14 @@
     font-family: 'Inter', sans-serif;
   }
 
+  /* Permanent override: ensure dark background and text color persist even if
+     other styles try to override them. This uses the CSS variables defined above
+     so it integrates with the theme tokens. */
+  html, body, #root {
+    background: hsl(var(--background)) !important;
+    color: hsl(var(--foreground)) !important;
+  }
+
   html {
     scroll-behavior: smooth;
   }
