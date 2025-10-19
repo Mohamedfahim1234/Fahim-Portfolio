@@ -24,6 +24,22 @@
   <body>
     <!-- Fallback content shown when JS fails to run -->
     <div id="root">Loading portfolio... If this message remains, open DevTools Console (F12) to see errors.</div>
+    <!-- Inline probe: runs before module load to confirm browser executes inline scripts -->
+    <script>
+      try {
+        const root = document.getElementById('root');
+        if (root) {
+          root.style.padding = '16px';
+          root.style.color = 'white';
+          root.style.background = 'crimson';
+          root.innerText = 'Probe: inline script executed. Now loading app module...';
+        }
+        // Give a visible signal in console as well
+        console.info('Inline probe script executed');
+      } catch (e) {
+        console.error('Inline probe error', e);
+      }
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
