@@ -11,10 +11,10 @@ const Projects = () => {
       gradient: "from-primary to-secondary"
     },
     {
-      title: "CI/CD Pipeline for Web App",
-      description: "Automated build, test, and deployment pipeline using GitHub Actions and Jenkins. Containerized application deployed to AWS EC2 with automated testing and zero-downtime deployments showcasing DevOps automation practices.",
+      title: "CI/CD Pipeline with Jenkins & Docker",
+      description: "I built a fully automated CI/CD pipeline using Jenkins, GitHub, and Docker. Whenever code is pushed to GitHub, Jenkins automatically pulls the latest code, builds the application, creates a Docker image, pushes it to Docker Hub, and deploys the container. This eliminates manual deployment, ensures consistent builds, and speeds up delivery.",
       icon: Globe,
-      tags: ["GitHub Actions", "Jenkins", "Docker", "AWS EC2"],
+      tags: ["Jenkins", "GitHub", "Docker", "CI/CD"],
       gradient: "from-secondary to-accent"
     },
     {
